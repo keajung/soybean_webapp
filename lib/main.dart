@@ -717,8 +717,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                           _text3.text.isEmpty ? _validate3 = true : _validate3= false;
 
                                           if(_validate1==false&&_validate2==false&&_validate3==false&&_validateMonth==false) {
-                                            url =
-                                            "http://127.0.0.1:5000/predict_model?Soybean_meal_TH=$valueinputTH&Soybean_meal_US=$valueUs&Crude_Oil=$valueOil&New_Month=$valueMonth&Year=$valueYear";
+                                            url ="http://127.0.0.1:5000/predict_model?Thai_Import=$valueinputTH&Soybean_meal_US=$valueUs&Crude_Oil=$valueOil&New_Month=$valueMonth&Year=$valueYear";
                                             print(url);
                                             fetchData(context);
                                             Data = await Getdata(url);

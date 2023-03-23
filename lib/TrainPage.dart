@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
       var MONTHS = ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"];
       for(int i=0; i<MONTHS.length;++i){
         if(splitted[0]==MONTHS[i]){
-          valueMonth = i;
+          valueMonth = i+1;
         }
       }
 
